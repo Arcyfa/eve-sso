@@ -1,0 +1,26 @@
+{
+    "name": "arcyfa/eve-sso",
+    "description": "Socialite driver for EVE Online SSO.",
+    "license": "MIT License",
+    "authors": [
+        {
+            "name": "Maarten Sarkol",
+            "email": "maarten.sarkol@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Arcyfa\\EveSso\\": "src/"
+        }
+    },
+    "require": {
+        "laravel/socialite": "^4.3",
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Arcyfa\\EveSso\\EveSsoServiceProvider"
+            ]
+        }
+    }
+}
