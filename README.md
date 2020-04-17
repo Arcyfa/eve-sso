@@ -1,7 +1,5 @@
 # Intro
 
-REPLACED WITH EVE-SSO-TWO
-
 This package provides a EVE SSO OAuth 2.0 driver for Laravel/Socialite and assists with some small things like updating User database table and creating routes for Socialite.
 
 ## Get application registered
@@ -26,7 +24,7 @@ Add to `config/app.php`
 >Arcyfa\EveSso\EveSsoServiceProvider::class,
 
 ## Migrate database
-When the package is added to Laravel ensure to migrate the database to update the user table.
+When the package is added to Laravel ensure to migrate the database to update the user table. A artisan vendor publish might be needed for the migration to become available.
 
 >php artisan migrate
 
